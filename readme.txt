@@ -8,7 +8,7 @@ La funcion usa 5 argumentos:
 The function uses 5 arguments:
 
 eq = string (mdrd, ckd, o cogau)
-sex = string
+sex = string (m para masculino y f para femenino - m for male and f for female)
 weight = string (peso del paciente - patient weight)
 age = integer (edad del paciente- patient age)
 ser_cr = integer (creatinina serica del paciente - patient serum creatinine)

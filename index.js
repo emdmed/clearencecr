@@ -1,11 +1,13 @@
 /*
 La funcion usa 5 argumentos:
+-----------------------------
+The function uses 5 arguments:
 
-eq = string (Podes elegir entre mdrd, ckd, o cogau)
-sex = string
-weight = string (peso del paciente)
-age = integer (edad del paciente)
-ser_cr = integer (creatinina del paciente)
+eq = string (mdrd, ckd, o cogau)
+sex = string (m para masculino y f para femenino - m for male and f for female)
+weight = string (peso del paciente - patient weight)
+age = integer (edad del paciente- patient age)
+ser_cr = integer (creatinina serica del paciente - patient serum creatinine)
 */
 
 function CalcClcr(eq, sex, weight, age, ser_cr){
@@ -72,6 +74,7 @@ function CalcClcr(eq, sex, weight, age, ser_cr){
 
 
 // ejemplos que se imprimen en la consola
+// examples that log in the console
 
 let formula = CalcClcr("cogau", "m", 80, 45, 0.85);
 console.log("CoGau M: " + formula);
