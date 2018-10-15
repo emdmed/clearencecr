@@ -1,7 +1,15 @@
-//CCr={((l 40–age) x weight)/(72xSCr)}x 0.85 (if female)
+/*
+La funcion usa 5 argumentos:
 
-function CalcClcr(type, sex, weight, age, ser_cr){
-    if (type === "cogau"){
+eq = string (Podes elegir entre mdrd, ckd, o cogau)
+sex = string
+weight = string (peso del paciente)
+age = integer (edad del paciente)
+ser_cr = integer (creatinina del paciente)
+*/
+
+function CalcClcr(eq, sex, weight, age, ser_cr){
+    if (eq === "cogau"){
         let one = 140 - +age;
         let two = +one * +weight;
         let three = 72 * ser_cr;
@@ -14,7 +22,7 @@ function CalcClcr(type, sex, weight, age, ser_cr){
             result = four;
         }
         return result;
-    } else if (type === "mdrd"){
+    } else if (eq === "mdrd"){
         let one = Math.pow(ser_cr, -1.154);
         let two = Math.pow(age, -0.203);   
         let three = 175 * +one * +two;
@@ -26,7 +34,7 @@ function CalcClcr(type, sex, weight, age, ser_cr){
             result = three;
         }
         return result;   
-    } else if (type === "ckd"){
+    } else if (eq === "ckd"){
         let result;
         if (sex === "m"){
             if (ser_cr > 0.9){
@@ -62,6 +70,8 @@ function CalcClcr(type, sex, weight, age, ser_cr){
     }
 }
 
+
+// ejemplos que se imprimen en la consola
 let formula = CalcClcr("cogau", "m", 80, 45, 0.85);
 console.log("CoGau M: " + formula);
 
