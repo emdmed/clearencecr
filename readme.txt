@@ -1,13 +1,20 @@
+
 Esta es una funcion con 5 argumentos para calcular el clearance de creatinina
-Puede usarse tanto en el browser como en node.js
+------------------------------------------------------------------------------
+This is a 5 argument function to calculate creatinine clearance
 
 La funcion usa 5 argumentos:
+-----------------------------
+The function uses 5 arguments:
 
-eq = string (Podes elegir entre mdrd, ckd, o cogau)
+eq = string (mdrd, ckd, o cogau)
 sex = string
-weight = string (peso del paciente)
-age = integer (edad del paciente)
-ser_cr = integer (creatinina del paciente)
+weight = string (peso del paciente - patient weight)
+age = integer (edad del paciente- patient age)
+ser_cr = integer (creatinina serica del paciente - patient serum creatinine)
 
 El return siempre es el resultado final sin limites en los decimales
 Pueden elegir la cantidad de decimales agregando una linea con .toFixed(cantidad de decimales)
+------------------------------------------------------------------------------------------------
+The return value is the final result without decimal limitations
+Decimal limitations can be set with .toFixes(decimal places)
