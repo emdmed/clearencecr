@@ -72,6 +72,7 @@ function CalcClcr(eq, sex, weight, age, ser_cr){
 
 
 // ejemplos que se imprimen en la consola
+
 let formula = CalcClcr("cogau", "m", 80, 45, 0.85);
 console.log("CoGau M: " + formula);
 
